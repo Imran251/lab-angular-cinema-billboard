@@ -1,0 +1,18 @@
+<h1>Home Page</h1>
+
+<div class="container">
+  <div class="innerContainer" *ngFor="let oneMovie of movieThang.getMovies()">
+    <h2>
+      Room: {{ oneMovie.room }}
+    </h2>
+    <p>
+      Showtime: {{ oneMovie.hours }}
+    </p>
+    <img [src]='oneMovie.poster'>
+    <p>
+     <a [routerLink]="['/movie', oneMovie.id]">
+      {{ oneMovie.title }}
+     </a>
+    </p>
+  </div>
+</div>

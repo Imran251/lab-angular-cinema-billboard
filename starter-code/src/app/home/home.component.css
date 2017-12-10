@@ -1,0 +1,12 @@
+img {
+    width: 500px;
+}
+
+.innerContainer{
+    display: inline-block;
+    width: 500px;
+}
+
+p, h2, a{
+    text-align: center
+}
